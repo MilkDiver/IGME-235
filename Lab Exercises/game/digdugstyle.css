@@ -1,0 +1,46 @@
+ *{
+        font-family: sans-serif;
+    }
+    header{
+        background-color: "lightblue";
+    }
+    h1 { 
+        font-family: "Prompt" sans-serif;
+        color:red;
+        border-bottom: 1px solid blue;
+        }
+    h2{
+        color:#253237;
+    }
+    h3{
+        color:gray;
+    }
+    p{
+        border: 1px solid #253237
+        margin-left: 100px;
+    }
+    blockquote { 
+        background-color: lightgray;
+        padding: 1rem;
+        }
+    img.side
+    {
+        float:right; margin: 0 12px;
+    }
+    body {
+        background-color:  #253237;
+        color: black;
+    }
+    a {
+        color: #81523F;
+    }
+    main{
+        border: 1px solid black;
+        
+    }
+    main, header, footer {
+        background-color: #CAC2B5;
+        margin: 0 auto;
+        width: 80vw;
+        padding: 1rem;
+    }

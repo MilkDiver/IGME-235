@@ -1,0 +1,37 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #81523F;
+}
+hr,p{
+    background-color: #CAC2B5;
+}
+body, main, a{
+    background-color: #81523F;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 0 auto;
+    width:30vw;
+    background-color: #81523F;
+    color: #CAC2B5;
+    padding: 1rem;
+    
+}
+img, a
+{
+    margin: auto 45vw;
+}
+
+p{
+    margin-left: 100px;
+    margin: 0 auto;
+    width: 80vw;
+    color: #253257;
+    padding: 1rem;
+}
+
+a{
+    color:#CAC2B5;
+}
+

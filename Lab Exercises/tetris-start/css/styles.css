@@ -1,0 +1,28 @@
+*{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h2, h3{
+    border-bottom: 1px solid red;
+ clear: both;
+}
+figure{
+    float: right;
+    img {
+        width: 40%;
+    }
+    margin-right: 2rem;
+}
+div {
+    border: 2px solid black;
+    width: 30%;
+    float: left;
+}
+footer{
+    clear: both;
+    position:fixed;
+    bottom: 620px;
+    left: 59%;
+    z-index: -5;
+}
