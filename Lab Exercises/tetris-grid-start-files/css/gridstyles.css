@@ -1,0 +1,9 @@
+/* It starts completely empty. I wish you luck. */
+
+body {
+    margin: 1rem;
+}
+
+#wrapper{
+    display: grid;
+}
