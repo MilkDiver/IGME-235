@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<title>PokeDex</title>
+ 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+  	
+</head>
+<body>
+<header>
+	<h1>PokeDex</h1>
+</header>
+
+<div class="widgets">
+	Search Term -> 
+	<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="ditto">
+	<hr>Search by Type ->
+    <select id="typeFilter">
+        <option value="">Any</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+        <option value="psychic">Psychic</option>
+        <option value="ice">Ice</option>
+        <option value="dragon">Dragon</option>
+        <option value="dark">Dark</option>
+        <option value="fairy">Fairy</option>
+        <option value="normal">Normal</option>
+        <option value="fighting">Fighting</option>
+        <option value="flying">Flying</option>
+        <option value="poison">Poison</option>
+        <option value="ground">Ground</option>
+        <option value="rock">Rock</option>
+        <option value="bug">Bug</option>
+        <option value="ghost">Ghost</option>
+        <option value="steel">Steel</option>
+    </select>
+	<hr>Max # results -> 
+	<select id="limit">
+		<option value="5">5</option>
+		<option value="10" selected>10</option>
+		<option value="25">25</option>
+		<option value="50">50</option>
+		<option value="100">100</option>
+	</select>
+</div>
+
+<div class="widgets">
+	<button type="button" id="search" class="searcher">Find a pokemon!<br></button>
+</div>
+<div id="status">Ready to Search!</div>
+
+<h2>Results</h2>
+<div id="content">
+	<p>No data yet!</p>
+</div>
+ 
+<script src="js/main.js"></script>
+</body>
+</html>

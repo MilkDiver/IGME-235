@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Phrases</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>MilkDiver's Thought Generator</h1>
+    </header>
+    <div class="content" id="dynamic-content">
+        <p id="phrase">Spitting out something...</p>
+        <button onclick="displayQuote()">Gimme a new thought</button>
+    </div>
+    <footer>
+        <p>Created by Jack Moyen</p>
+    </footer>
+
+    <script>
+        const phrases = [
+            "Should I really have picked up this cat in a parking lot? Meh.",
+            "I love tzatziki so much. No really, you should try it.",
+            "The Untamed Wilds could be a crazy roguelite deckbuilder if I had my way.",
+            "I miss bagels.",
+            "Yellow is a bad color. Gold and amber can stay. Yellow sucks though.",
+            "I LOVE DICE",
+            "Mmm... cheese.",
+            "I want to eat most kinds of crystal. Rock candy is nice.",
+            "Diamonds are so overrated.",
+            "I dunno, never been one for designer clothes.",
+            "Reminder to drink water.",
+            "How many times have you clicked this?",
+            "[Insert Thought Here]",
+            "Placeholder thought.",
+            ":)",
+            "What's your favorite kind of ice cream? Mine is orange sherbet.",
+            "My favorite color is aquamarine.",
+            "I want a big slice of watermelon.",
+            "Yknow, maybe I'm just hungry.",
+            "I can't even fathom the number of thoughts I've written. It's probably like, 23 though."
+        ];
+
+        function getRandomPhrase() {
+            const i = Math.floor(Math.random() * phrases.length);
+            return phrases[i];
+        }
+
+        function displayQuote() {
+            document.getElementById('phrase').innerText = getRandomPhrase();
+        }
+
+        // Displays phrase on page load
+        window.onload = displayQuote;
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+html {
+    font-family: sans-serif;
+    font-size:large;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: rgb(199, 199, 199)
+}
+
+
+#wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:"navbar"
+                        "logo"
+                        "title"
+                        "content";
+    max-width: 1200px;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    margin-left:12%;
+    margin-right:8%;
+}
+
+#logo{
+    grid-area: logo;
+    padding:1em;
+}
+
+#titleWrapper{
+    grid-area: title;
+    padding:1em;
+}
+
+#titleWrapper>img{
+    width: 70vw;
+    height: auto;
+}
+
+#titleWrapper>h1{
+    margin-top: -50px;
+    font-size:3vw;
+}
+
+footer{
+    grid-area: footer;
+    padding:1em;
+}
+
+#navBar{
+    grid-area: navbar;
+    padding:1vw;
+    width: 93vw;
+}
+
+ul.menu { 
+    grid-area: menu;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    display: block;
+    background: gray;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.1s ease-in, background-color 0.5s linear;
+}
+
+.menu li {
+    width: 25%;
+}
+
+ul.menu ul li {
+    width:100%;
+}
+
+ul.menu ul {
+    display:none;
+}
+
+ul.menu li:hover ul {
+    display:flex;
+}
+
+
+.menu .submenu>a:after {
+    content: "+";
+    padding-left:5px;
+}
+
+#contentList {
+    margin-left: -14vw;
+    padding-top: 10%;
+    grid-area: content; 
+    padding:1em;
+    display: grid;
+    grid-template-columns: repeat(11, 100px);
+    grid-template-rows: repeat(11, 100px);
+    gap:1.2em;
+    justify-content: center;
+
+}
+
+.block, .blockMulti, .blockText{
+    background-color: rgb(105, 154, 177);
+}
+
+.contentText{
+    padding: 1em;
+}
+
+.blockImg{
+    padding: 1em;
+}
+
+#block1 {
+    grid-column: 7/span 4;
+    grid-row: 1/span 2;
+}
+
+#block1>.contentText{
+    margin-top: -20px;
+    font-size: x-large;
+}
+
+#block1>.blockImg>img{
+    float:right;
+}
+
+#block2 {
+    grid-column: 1/span 4;
+    grid-row: 3/span 2;
+    background-color: rgb(80, 117, 134);
+}
+
+#block2>a>.blockImg>img{
+    margin-top: -12px;
+    margin-left: -15px;
+    width: 90%;
+}
+
+#block3 {
+    grid-column: 8/span 3;
+    grid-row: 3/span 2;
+    background-color: rgb(80, 117, 134);
+}
+
+
+#block4 {
+    grid-column: 1/span 3;
+    grid-row: 5/span 3;
+}
+
+#block4>a>.blockImg>img{
+    width: 50%;
+    float: right;
+}
+
+#block4>.contentText{
+    margin-top:100px;
+}
+
+#block5 {
+    grid-column: 7/span 4;
+    grid-row: 5/span 2;
+}
+
+#block5>a>.blockImg>img{
+    float:right;
+}
+
+#block6 {
+    grid-column: 7/span 4;
+    grid-row: 7/span 2;
+}
+
+#block6>a>.blockImg>img{
+    width: 50%;
+    float: right;
+}
+
+#block7 {
+    grid-column: 1/span 2;
+    grid-row: 8/span 3;
+}
+
+#block7>a>.blockImg>img{
+    width: 50%;
+    float:right;
+}
+
+#block7>.contentText{
+    margin-top: 15px;
+}
+
+#block8 {
+    grid-column: 6/span 5;
+    grid-row: 9/span 2;
+}
+
+#block9 {
+    grid-column: 5/span 3;
+    grid-row: 3/span 2;
+    background-color: rgb(80, 117, 134);
+}
+
+#block10 {
+    grid-column: 4/span 3;
+    grid-row: 5/span 3;
+}
+
+#block11 {
+    grid-column: 3/span 3;
+    grid-row: 8/span 2;
+}
+
+#block12 {
+    grid-column: 3/span 3;
+    grid-row: 10/span 1;
+}
+
+#bluebox{
+    grid-column: 6/span 1;
+    grid-row: 8/span 1;
+}
+
+#introSpacer{
+    grid-column: 1/span 6;
+    grid-row: 1/span 2;
+    background-color: rgb(128, 166, 184);
+}
+
+@media screen and (max-width: 760px) {
+    #wrapper {
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-areas: "logo navbar navbar"
+                            "title title title"
+                            "content content content";
+        margin-left: 1vw;
+    }
+    #logo>img{
+       width: 100%;
+    }
+    #titleWrapper>h1{
+        margin-top: -25px; 
+    }
+    #contentList {
+        grid-area: content; 
+        padding:1em;
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,145 @@
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ header {
+    height: 200px;
+    color: #000000;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #f14545;
+ }
+
+ 
+ header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align:center;
+    padding-top: 35px;
+ }
+ 
+ #status {
+    font-style: italic;
+    font-weight: bold;
+    height: 32px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: #464646;
+ }
+
+ #content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    margin-top: 20px;
+ }
+
+ h2{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align:center;
+    padding: 35px;
+ }
+ 
+ .result {
+     background: white;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     overflow: hidden;
+     text-align: center;
+     transition: transform 0.2s ease-in-out;
+ }
+
+ .result:hover {
+     transform: scale(1.05);
+ }
+
+ .result img {
+     width: 100%;
+     height: auto;
+     border-bottom: 1px solid #ddd;
+    
+ }
+
+ .result span{
+     display: block;
+     padding: 10px 0;
+     font-size: 1rem;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+
+ .result h2 {
+     font-size: 1.2rem;
+     color: #333;
+     margin: 10px 0;
+ }
+
+ .result p {
+     font-size: 0.9rem;
+     color: #666;
+     margin: 5px 0;
+ }
+
+ .result ul {
+     list-style: none;
+     padding: 0;
+     margin: 10px 0;
+     font-size: 0.9rem;
+     color: #666;
+ }
+
+ button{
+   display : inline-block;
+   cursor : pointer;
+   border-style : solid;
+   border-width : 1px;
+   border-radius : 50px;
+   padding : 10px 18px;
+   font-size : 9.5pt;
+   font-weight : bold;
+   color : #fff;
+   font-family : sans-serif;
+   text-decoration : none;
+ }
+
+ button.searcher{
+       background: #000000;
+       background: linear-gradient(to top, #4533eb 0%,#4533eb 100%);
+ }
+
+ button:hover{
+     background: #000000;
+ }
+
+ button:active{
+     background: #000000;
+     box-shadow : 0 0 6px rgba(0,0,0,.6);
+ }
+
+ button:focus {outline:0;}
+
+ .widgets{
+     padding: 15px;
+     font-weight: bold;
+     background-color: #464646;
+     color:#fff;
+ }
+
+ .widgets {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+ }
+
+ #searchterm{
+    font-weight: bold;
+ }
